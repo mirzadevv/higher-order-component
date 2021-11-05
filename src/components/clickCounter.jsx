@@ -3,10 +3,12 @@ import HocCounter from "../hoc/hocCounter";
 import "./container.css";
 class ClickCounter extends React.Component {
   render() {
-    const { onIncrement, count } = this.props;
+    const { onIncrement, count, title } = this.props;
     return (
       <div className="container">
-        <h5>{count}</h5>
+        <h5>
+          {count} {title}
+        </h5>
         <button onClick={onIncrement}>Increment</button>
       </div>
     );
