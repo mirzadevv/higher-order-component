@@ -5,8 +5,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <ClickCounter />
-        <HoverCounter />
+        <ClickCounter title="click counter" />
+        <HoverCounter title="hover counter" />
       </>
     );
   }
