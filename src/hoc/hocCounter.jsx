@@ -11,10 +11,13 @@ const HocCounter = (WrappedComponent) => {
     };
 
     render() {
+      const { title } = this.props;
+
       return (
         <WrappedComponent
           count={this.state.count}
           onIncrement={this.handleIncrement}
+          title={title}
         />
       );
     }
