@@ -1,6 +1,6 @@
 import React from "react";
-import HocCounter from "../hoc/hocCounter";
 import "./container.css";
+import WithCounter from "./hoc/withCounter";
 class ClickCounter extends React.Component {
   render() {
     const { onIncrement, count, title } = this.props;
@@ -14,5 +14,4 @@ class ClickCounter extends React.Component {
     );
   }
 }
-
-export default HocCounter(ClickCounter);
+export default WithCounter(ClickCounter);

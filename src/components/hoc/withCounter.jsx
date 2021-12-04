@@ -1,6 +1,6 @@
 import React from "react";
 
-const HocCounter = (WrappedComponent) => {
+const WithCounter = (WrappedComponent) => {
   class HocCounter extends React.Component {
     state = {
       count: 0,
@@ -25,4 +25,4 @@ const HocCounter = (WrappedComponent) => {
   return HocCounter;
 };
 
-export default HocCounter;
+export default WithCounter;
